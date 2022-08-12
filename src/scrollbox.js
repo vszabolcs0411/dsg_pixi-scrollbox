@@ -1,6 +1,7 @@
 import * as PIXI from 'pixi.js'
 import { Viewport } from 'pixi-viewport'
 import Penner from 'penner'
+import { UIContainer } from 'dsg-engine'
 
 const scrollboxOptions = {
     'boxWidth': 100,
@@ -26,7 +27,7 @@ const scrollboxOptions = {
 /**
  * pixi.js scrollbox: a masked content box that can scroll vertically or horizontally with scrollbars
  */
-export class Scrollbox extends PIXI.Container {
+export class Scrollbox extends UIContainer {
     /**
      * create a scrollbox
      * @param {object} options
